@@ -1,17 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import myImage from "./images/my.jpg";
 
-import "./styles.css";
-import myImage from "./img/myImage.jpg";
+function Hi() {
+  return <div>
 
-function App() {
-    return (
-      <div>
       <div className="container">
         <div className="left_side">
             <div className="profileText">
                 <div className="imgbx">
-                    <img src="myImage.jpg" alt=""/>
+                      { <img src={myImage} alt=""/> }
                 </div>
-                <h2>Mohammad Asif<span>Web Develpor</span></h2>
+                <h2>Mohammad Asif</h2>
+                <h3><span>Web Develpor</span></h3>
             </div>
 
             <div className="contactInfo">
@@ -61,19 +63,19 @@ function App() {
                     <li>
                         <span className="text">English</span>
                         <span className="percent">
-                            <div style="width: 50%;"></div>
+                            
                         </span>
                     </li>
                     <li>
                         <span className="text">Urdu</span>
                         <span className="percent">
-                            <div style="width: 90%;"></div>
+                            
                         </span>
                     </li> 
                     <li>
                         <span className="text">Punjabi</span>
                         <span className="percent">
-                            <div style="width: 70%;"></div>
+                            
                         </span>
                     </li>
                 </ul>
@@ -99,46 +101,49 @@ function App() {
                 <div className="box">
                     <h4>Html</h4>
                     <div className="percent">
-                        <div style="width: 90%;"></div>
+                        
                     </div>
                 </div>
                 <div className="box">
                     <h4>Css</h4>
                     <div className="percent">
-                        <div style="width: 75%;"></div>
+                        
                     </div>
-                </div><div className="box">
+                </div>
+                <div className="box">
                     <h4>Javascrip</h4>
                     <div className="percent">
-                        <div style="width: 70%;"></div>
+                        
                     </div>
-                </div><div className="box">
+                </div>
+                <div className="box">
                     <h4>React js</h4>
                     <div className="percent">
-                        <div style="width: 20%;"></div>
+                        
                     </div>
-                </div><div className="box">
+                </div
+                ><div className="box">
                     <h4>Node js</h4>
                     <div className="percent">
-                        <div style="width: 40%;"></div>
+                        
                     </div>
                 </div>
                 <div className="box">
                     <h4>Express js</h4>
                     <div className="percent">
-                        <div style="width: 50%;"></div>
+                        
                     </div>
                 </div>
                 <div className="box">
                     <h4>MongoDB</h4>
                     <div className="percent">
-                        <div style="width: 40%;"></div>
+                        
                     </div>
                 </div>
                 <div className="box">
                     <h4>Firebase</h4>
                     <div className="percent">
-                        <div style="width: 30%;"></div>
+                        
                     </div>
                 </div>
                 
@@ -154,7 +159,7 @@ function App() {
                         <h5>Not yet</h5>
                     </div>
                     <div className="text">
-                        <h4></h4>
+                        
                     </div>
                 </div>
             </div>
@@ -176,10 +181,10 @@ function App() {
                     <li>Jwt Auth Server</li>
                 </ul>
             </div>
-        </div>
-    </div>
-    </div>
-  );
+            </div>
+        </div>;
+    
+  </div>
 }
 
-export default App;
+ReactDOM.render(<Hi/>, document.querySelector('#root'));
